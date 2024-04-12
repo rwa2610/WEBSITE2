@@ -3,12 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const toggleButton = document.getElementById("toggleButton");
     const additionalInfo = document.getElementById("additionalInfo");
 
-    // Function to toggle additional information visibility
     const toggleInfoVisibility = () => {
         additionalInfo.classList.toggle("visible");
     };
 
-    // Function to handle mouse move event
     const onMouseMove = (event) => {
         cursor.style.left = event.pageX + "px";
         cursor.style.top = event.pageY + "px";
@@ -21,12 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Function to handle button click event
     const onButtonClick = () => {
         toggleInfoVisibility();
     };
 
-    // Add event listeners
     document.addEventListener("mousemove", onMouseMove);
     toggleButton.addEventListener("click", onButtonClick);
 });
